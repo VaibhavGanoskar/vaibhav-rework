@@ -1,0 +1,101 @@
+.h22 {
+  margin: 0;
+  width: 650px;
+  position: relative;
+  font-size: inherit;
+  letter-spacing: -0.06em;
+  line-height: 60px;
+  font-weight: 700;
+  font-family: inherit;
+  display: inline-block;
+  z-index: 1;
+}
+.h2-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 0 var(--padding-4xs) 0 var(--padding-base);
+ 
+}
+.faqs,
+.formfaq-parent,
+.frame-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.formfaq-parent {
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+  debug_commit: f6aba90;
+}
+.faqs,
+.frame-div {
+  max-width: 100%;
+}
+.faqs {
+  align-self: stretch;
+  height: 339px;
+  align-items: flex-start;
+  padding: 0 var(--padding-12xs) var(--padding-65xl-7);
+  box-sizing: border-box;
+  z-index: 1;
+  text-align: left;
+  font-size: var(--h5-size);
+}
+.frame-div {
+  width: 675px;
+  align-items: flex-end;
+  gap: var(--gap-28xl);
+}
+.frame-container {
+  width: 1077px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  max-width: 100%;
+  text-align: center;
+  font-size: var(--h2-size);
+  color: var(--color-white);
+  font-family: var(--body-small-tag);
+  position: relative;
+ right: 10%;
+}
+@media screen and (max-width: 1050px) {
+  .h22 {
+    font-size: var(--font-size-24xl);
+    line-height: 48px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .faqs {
+    height: auto;
+  }
+  .frame-div {
+    gap: var(--gap-4xl);
+  }
+}
+@media screen and (max-width: 450px) {
+  .h22 {
+    font-size: var(--font-size-13xl);
+    line-height: 36px;
+  }
+  .faqs {
+    padding-bottom: var(--padding-36xl);
+    box-sizing: border-box;
+  }
+ .frame-container{
+  position: relative;
+  left: 40%;
+  bottom: 140px;
+  
+ } 
+
+.h22{
+  word-spacing: 6px;
+
+} 
+}

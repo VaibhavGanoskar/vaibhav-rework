@@ -1,0 +1,113 @@
+.body3,
+.h21 {
+  margin: 0;
+  align-self: stretch;
+  position: relative;
+}
+.h21 {
+ 
+  font-size: inherit;
+  letter-spacing: -0.06em;
+  line-height: 62px;
+  font-weight: 700;
+  font-family: inherit;
+  
+}
+.body3 {
+ 
+  font-size: var(--body-large-size);
+  letter-spacing: -0.04em;
+  line-height: 31px;
+  font-weight: 400;
+  font-family: var(--body-bold);
+}
+.frame-wrapper,
+.h2-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  
+}
+.h2-group {
+  align-self: stretch;
+  gap: var(--gap-xl);
+}
+.frame-wrapper {
+  width: 540px;
+  max-width: 100%;
+}
+.feature-cards-parent {
+  width: 1112px;
+  overflow-x: auto;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: var(--gap-base);
+  font-size: var(--h5-size);
+}
+.desktop-child,
+.feature-cards-parent,
+.frame-group {
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+  left: 5%;
+  max-width: 100%;
+}
+.frame-group {
+  flex-direction: column;
+  align-items: center;
+  gap: var(--gap-47xl);
+}
+.desktop-child {
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0 var(--padding-25xl) var(--padding-126xl);
+  box-sizing: border-box;
+  text-align: center;
+  font-size: var(--h2-size);
+  color: var(--color-white);
+  font-family: var(--body-small-tag);
+}
+@media screen and (max-width: 1200px) {
+  .frame-group {
+    gap: var(--gap-14xl);
+  }
+}
+@media screen and (max-width: 1050px) {
+  .h21 {
+    font-size: var(--font-size-24xl);
+    line-height: 48px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .frame-group {
+    gap: var(--gap-base);
+  }
+  .desktop-child {
+    padding-left: var(--padding-3xl);
+    padding-right: var(--padding-3xl);
+    padding-bottom: var(--padding-75xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 450px) {
+  .h21 {
+    font-size: var(--font-size-13xl);
+    line-height: 36px;
+  }
+  .body3 {
+    font-size: var(--h5-size);
+    line-height: 25px;
+    
+  }
+
+ .frame-group{
+  position: relative;
+  width: 80%;
+  left: 6%;
+  top: 20px;
+  gap: 20px;
+ } 
+}
